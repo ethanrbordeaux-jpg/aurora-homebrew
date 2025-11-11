@@ -1,7 +1,7 @@
 <elements>
   <info>
     <update version="0.0.1">
-      <file name="circle-of-the-sea.xml" url="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/refs/heads/main/circle-of-the-sea.xml"/>
+      <file name="circle-of-the-sea.xml" url="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/main/circle-of-the-sea.xml"/>
     </update>
   </info>
 
@@ -131,3 +131,4 @@
   <element name="Leviathan's Wake Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE"/>
 
 </elements>
+
