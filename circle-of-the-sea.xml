@@ -5,7 +5,7 @@
         <description>
             <p>Druids of the Circle of the Sea draw their power from the oceans, channeling aquatic grace and mysticism.</p>
         </description>
-        <file name="circle-of-the-sea.xml" url="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/main/circle-of-the-sea.xml" />
+        <file name="circle-of-the-sea.xml" url="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/refs/heads/main/circle-of-the-sea.xml" />
     </element>
 
     <!-- Circle of the Sea Archetype -->
@@ -98,3 +98,4 @@
     </element>
 
 </elements>
+
