@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
 
   <!-- Homebrew Source for Circle of the Sea -->
@@ -32,6 +32,55 @@
       <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_ABYSSAL_CALM" level="10"/>
       <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE" level="14"/>
     </rules>
+  </element>
+
+  <!-- Circle Spells -->
+  <element name="Circle Spells" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS">
+    <description>
+      <p>You learn additional spells at certain druid levels:</p>
+      <ul>
+        <li>2nd Level: Create or Destroy Water, Fog Cloud</li>
+        <li>3rd Level: Gust of Wind, Mirror Image</li>
+        <li>5th Level: Tidal Wave, Water Breathing</li>
+        <li>7th Level: Control Water, Freedom of Movement</li>
+        <li>9th Level: Maelstrom, Cone of Cold</li>
+      </ul>
+    </description>
+  </element>
+
+  <!-- Fluid Form -->
+  <element name="Fluid Form" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_FLUID_FORM">
+    <description>
+      <p>Your Wild Shape flows with the grace of water, enhancing your agility and precision. While transformed, you use Dexterity instead of Strength for natural attacks and retain monk features as described.</p>
+    </description>
+  </element>
+
+  <!-- Miststep -->
+  <element name="Miststep" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_MISTSTEP">
+    <description>
+      <p>As a bonus action, teleport up to 15 feet to a space adjacent to water or in light obscurement. Uses per long rest: Wisdom modifier (minimum 1).</p>
+    </description>
+  </element>
+
+  <!-- Deep Current -->
+  <element name="Deep Current" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_DEEP_CURRENT">
+    <description>
+      <p>Use your reaction to redirect ranged attacks or spells targeting you or an ally within 30 feet. Uses per long rest: Wisdom modifier.</p>
+    </description>
+  </element>
+
+  <!-- Abyssal Calm -->
+  <element name="Abyssal Calm" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_ABYSSAL_CALM">
+    <description>
+      <p>You radiate a 10-foot aura: hostile creatures have disadvantage on charm/frighten saves, allies have advantage. Constant effect, no concentration.</p>
+    </description>
+  </element>
+
+  <!-- Leviathan's Wake -->
+  <element name="Leviathan's Wake" type="Archetype Feature" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE">
+    <description>
+      <p>Create a 30-foot line of crashing water (5ft wide). Dex save: fail 6d10 bludgeoning and prone, success half. Uses: 1 per long rest.</p>
+    </description>
   </element>
 
 </elements>
