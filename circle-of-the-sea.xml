@@ -1,134 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
 <elements>
-  <info>
-    <update version="0.0.1">
-      <file name="circle-of-the-sea.xml" url="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/main/circle-of-the-sea.xml"/>
-    </update>
-  </info>
 
-  <!-- Source Element -->
-  <element name="Circle of the Sea (Homebrew)" type="Source" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_SOURCE">
-    <description>
-      <p>The Circle of the Sea is a homebrew druid subclass drawing mystical power from oceans, tides, and aquatic currents. It grants unique circle spells, fluid Wild Shape abilities, and aquatic-themed features for Druid characters.</p>
-    </description>
+  <!-- Homebrew Source for Circle of the Sea -->
+  <element name="Circle of the Sea (Homebrew)" type="Source" source="Homebrew" id="ID_HOMEBREW_SOURCE_CIRCLE_OF_THE_SEA">
+    <sheet>
+      <description>Homebrew content by Ethan Bordeaux.</description>
+    </sheet>
+    <rules>
+      <set name="url" value="https://raw.githubusercontent.com/ethanrbordeaux-jpg/aurora-homebrew/main/circle-of-the-sea.xml"/>
+    </rules>
   </element>
 
-  <!-- Subclass Element -->
-  <element name="Circle of the Sea" type="Archetype" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA">
+  <!-- Circle of the Sea Archetype -->
+  <element name="Circle of the Sea" type="Archetype" source="Circle of the Sea (Homebrew)" id="ID_HOMEBREW_ARCHETYPE_CIRCLE_OF_THE_SEA">
     <supports>Druid Circle</supports>
     <description>
       <p>Druids of the Circle of the Sea draw their power from the vast oceans, channeling fluid grace and aquatic mysticism. Their forms shift like tides, and their presence flows through battle like mist over waves.</p>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS"/>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_FLUID_FORM"/>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_MISTSTEP"/>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_DEEP_CURRENT"/>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_ABYSSAL_CALM"/>
+      <div element="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE"/>
     </description>
-    <sheet display="false">
-      <description>Draw power from the oceans and channel fluid grace in battle.</description>
-    </sheet>
+    <sheet display="false"/>
     <rules>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS" level="2"/>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_FLUID_FORM" level="2"/>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_MISTSTEP" level="2"/>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_DEEP_CURRENT" level="6"/>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_ABYSSAL_CALM" level="10"/>
-      <grant type="Archetype Feature" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE" level="14"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS" level="2"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_FLUID_FORM" level="2"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_MISTSTEP" level="2"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_DEEP_CURRENT" level="6"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_ABYSSAL_CALM" level="10"/>
+      <grant type="Archetype Feature" id="ID_HOMEBREW_ARCHETYPE_FEATURE_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE" level="14"/>
     </rules>
   </element>
-
-  <!-- Circle Spells -->
-  <element name="Circle Spells" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS</requirements>
-    <description>
-      <p>At 2nd level, you gain additional circle spells:</p>
-      <ul>
-        <li>2nd: Create or Destroy Water, Fog Cloud</li>
-        <li>3rd: Gust of Wind, Mirror Image</li>
-        <li>5th: Tidal Wave, Water Breathing</li>
-        <li>7th: Control Water, Freedom of Movement</li>
-        <li>9th: Maelstrom, Cone of Cold</li>
-      </ul>
-    </description>
-    <sheet>
-      <description>Additional circle spells at levels 2,3,5,7,9.</description>
-    </sheet>
-    <rules>
-      <grant type="Spell" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_MIRROR_IMAGE" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_TIDAL_WAVE" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_WATER_BREATHING" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_CONTROL_WATER" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_MAELSTROM" spellcasting="Druid"/>
-      <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" spellcasting="Druid"/>
-    </rules>
-  </element>
-
-  <!-- Fluid Form -->
-  <element name="Fluid Form" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_FLUID_FORM">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_FLUID_FORM</requirements>
-    <description>
-      <p>Your Wild Shape flows with the grace of water, enhancing your agility and precision. While transformed:</p>
-      <ul>
-        <li>Use Dexterity instead of Strength for natural weapon attacks</li>
-        <li>Beast form counts as unarmored for Monk features</li>
-        <li>Make an unarmed strike as a bonus action after natural weapon attacks</li>
-        <li>Retain Monk speed bonus and can use Step of the Wind while transformed</li>
-      </ul>
-    </description>
-    <sheet>
-      <description>Enhance Wild Shape with agility, Monk benefits, and bonus action strikes.</description>
-    </sheet>
-  </element>
-
-  <!-- Miststep -->
-  <element name="Miststep" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_MISTSTEP">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_MISTSTEP</requirements>
-    <description>
-      <p>As a bonus action (while not wearing armor or a shield), teleport up to 15 feet to a space adjacent to water or in light obscurement (fog, steam, rain). Uses: Wisdom modifier per long rest (minimum 1).</p>
-    </description>
-    <sheet action="Bonus Action">
-      <description>Teleport to water or mist using Wisdom-based uses per long rest.</description>
-    </sheet>
-  </element>
-
-  <!-- Deep Current -->
-  <element name="Deep Current" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_DEEP_CURRENT">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_DEEP_CURRENT</requirements>
-    <description>
-      <p>Use your reaction to redirect ranged attacks or spells targeting you or an ally within 30 feet to a different target. Uses: Wisdom modifier per long rest.</p>
-    </description>
-    <sheet action="Reaction">
-      <description>Redirect ranged attacks or spells to a different target within 30 feet.</description>
-    </sheet>
-  </element>
-
-  <!-- Abyssal Calm -->
-  <element name="Abyssal Calm" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_ABYSSAL_CALM">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_ABYSSAL_CALM</requirements>
-    <description>
-      <p>You radiate a calming 10-foot aura: hostile creatures have disadvantage on charm/frighten saves; allies have advantage on charm/frighten saves. Constant effect, no concentration required.</p>
-    </description>
-    <sheet>
-      <description>10-foot calming aura affecting charm and fear saves.</description>
-    </sheet>
-  </element>
-
-  <!-- Leviathan's Wake -->
-  <element name="Leviathan's Wake" type="Archetype Feature" source="Homebrew" id="ID_HOMEBREW_DRUID_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE">
-    <requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE</requirements>
-    <description>
-      <p>Create a 30-foot line of crashing water (5 ft wide). Dexterity save vs your spell DC: fail = 6d10 bludgeoning and prone; success = half damage, not prone. Uses: 1 per long rest.</p>
-    </description>
-    <sheet action="Action">
-      <description>30-foot line of crashing water, Dexterity save for damage and prone.</description>
-    </sheet>
-  </element>
-
-  <!-- Feature Replacement Grants -->
-  <element name="Circle Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_CIRCLE_SPELLS"/>
-  <element name="Fluid Form Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_FLUID_FORM"/>
-  <element name="Miststep Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_MISTSTEP"/>
-  <element name="Deep Current Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_DEEP_CURRENT"/>
-  <element name="Abyssal Calm Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_ABYSSAL_CALM"/>
-  <element name="Leviathan's Wake Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_DRUID_CIRCLE_OF_THE_SEA_LEVIATHANS_WAKE"/>
 
 </elements>
-
